@@ -18,7 +18,8 @@
 		#textpositiondiv {
 			margin-top: 100px;
 		}
-	
+	.img { width: 80px;
+height :80px}
 	</style>
 	<script type="text/javascript" charset="utf-8" src="scripts/html5audio.js"></script>
   </head>
@@ -36,5 +37,14 @@
 		  activityIndicator = document.getElementById('activityindicator');
 		  textPosition = document.getElementById('textposition');
 	  </script>
+	 <table>
+    <tr>
+    <th><a href="#" id="playbutton" onClick="html5audio.play('http://91.121.4.107:8000/radio_plus_agadir.mp3');return false;" data-location="http://91.121.4.107:8000/radio_plus_agadir.mp3"><img src="Radio-plus-Agadir.jpg" class="img"></img></a><br></th>
+	<th><a href="#" id="playbutton" onClick="html5audio.play('http://streaming.radionomy.com:8000/FRANCE80');return false;" data-location="http://streaming.radionomy.com:8000/FRANCE80"><img src="Radio-plus-Agadir.jpg" class="img"></img></a><br><th>
+  </tr>
+  <tr>
+    <td>Contenu 1</td><td>Contenu 2</td>
+  </tr>
+</table>
   </body>
 </html>

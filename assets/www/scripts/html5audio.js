@@ -28,9 +28,11 @@ var isPlaying = false;
 var readyStateInterval = null;
 
 var html5audio = {
-	play: function()
+	play: function(url)
 	{
 		isPlaying = true;
+		myaudio.src=url;
+		myaudio.load();
 		myaudio.play();
 	
 		readyStateInterval = setInterval(function(){
@@ -102,3 +104,4 @@ var html5audio = {
 		textPosition.innerHTML = '';
 	}
 };
+
